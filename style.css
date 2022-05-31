@@ -14,7 +14,7 @@ body{
   flex: 1 0 auto;
   flex-wrap: wrap;
 } */
-.header1,.header2{
+.header1,.header2,.footer{
   display: flex;
   justify-content: space-around;
   background-color: #1f2937;
@@ -25,20 +25,27 @@ body{
 }
 .header2{
   order: 2;
-}
-.ever10{
-  width: 400px;
+  padding-bottom: 32px;
 }
 
-.texto{
+.titheader2{
+  padding-bottom: 16px;
+
+}
+.ever10{
+  width: 420px;
+}
+
+.texto2{
   max-width: 500px;
+  padding-bottom: 32px;
 }
 .links{
   display: flex;
   gap: 50px;
 }
 .header1{
-  gap: 350px;
+  gap: 370px;
   padding-bottom: 50px;
 }
 
@@ -46,27 +53,121 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 48px 0 64px 0px;
 }
 .container2{
   display: flex;
   justify-content: space-evenly;
-  gap: 52px;
+  gap: 32px;
+  padding: 0 128px;
 }
 .info{
-  max-width: 200px;
+  max-width: 250px;
   flex-wrap: wrap;
   display: flex;
 }
 .imgbody{
-  height: 250px;
+  height: 350px;
   width: 250px;
+  border: solid #3882f6 ;
+  border-radius: 10px;
+
 }
 
-/*  FORMATO DE TEXTO UNICAMENTE */
-
 .texto{
+  padding: 12px 0 130px 4px;
+
+}
+.quote{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 150px;
+  
+}
+.frase{
+  order: -1;
+  display: flex;
+  flex:1;
+  padding-bottom: 15px;
+  padding: ;
+}
+
+.firma{
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 300px;
+}
+.aclaracion{
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  padding-top: 150px;
+}
+
+.callto{
+  background-color: #3882f6;
+  padding: 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 120px 150px;
+  border-radius: 15px;
+  
+}
+input[type="submit"]{
+  border: solid #FFFFFF;
+  background-color: #3882f6 ;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 22px;
+  color: #FFFFFF;
+  
+}
+input.gordas[type="submit"]{
+  background-color: #3882f6 ;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 22px;
+  border-color: #3882f6;
+}
+input:hover{
+  background-color: #63A4FF ;
+  font-style: italic;
+}
+input.gordas:hover{
+  background-color: #63A4FF ;
+  border-color: #63A4FF;
+  font-style: italic;
+}
+
+/* .classbut{
+  border: solid #FFFFFF;
+  background-color: #3882f6 ;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 22px;
+  color: #FFFFFF;
+}
+.classbut:hover{
+  border: solid #FFFFFF;
+  background-color: #63A4FF ;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 22px;
+  color: #FFFFFF;
+} */
+
+.bottext{
+  width: 400px;
+}
+
+/*  FORMATO DE TEXTO y COLOR UNICAMENTE */
+
+.texto,.texto2{
   font-size: 18px;
-  color: #e5e7eb;
+  color: #747474;
 }
 .titheader1{
   color: #F9FAF8;
@@ -87,4 +188,39 @@ a{
   font-size: 36px;  
   font-weight: bolder;
   color: #1f2937;
+}
+.quote{
+  background-color: #e5e7eb;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+  color: #1f2937;
+
+}
+.firma{
+  font-size: 22px;  
+  font-weight: 500;
+  color: #1f2937;
+
+}
+.aclaracion{
+  font-size: 10px;
+}
+.bottit,.bottext{
+  color: #F9FAF8;
+}
+.bottit{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+input{
+  font-weight: bold;
+}
+.footer{
+  font-size: 18px;
+  color: #e5e7eb;
+  padding: 32px;
+  font-weight: bold;
+  font-style: italic;
 }
