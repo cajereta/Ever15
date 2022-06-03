@@ -22,6 +22,7 @@ body{
 }
 .header1{
   order:1;
+  padding-top: 6px;
 }
 .header2{
   order: 2;
